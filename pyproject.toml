@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "elecbullboard"
+version = "0.1.0"
+description = ""
+authors = ["Rex6961 <aon777ar@gmail.com>"]
+repository = "https://github.com/Rex6961/elecbullboard.git"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+
+
+[tool.poetry.group.django.dependencies]
+django = "^5.1.1"
+asgiref = "^3.8.1"
+pytz = "^2024.2"
+sqlparse = "^0.5.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
