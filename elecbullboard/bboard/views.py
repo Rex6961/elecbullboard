@@ -16,5 +16,5 @@ from .models import Bb
 
 # high level access
 def index(request):
-    bbs = Bb.objects.order_by("-published")
+    bbs = Bb.objects.all()
     return render(request=request, template_name='bboard/index.html', context={'bbs': bbs})
